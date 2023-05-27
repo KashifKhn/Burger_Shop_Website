@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color : #3d2514;
+    --accent-color: #bf2222;
+    --background-color: #ffc658;
+    --font-heading: 'Alfa Slab One', cursive;
+    --font-paragraph: 'Montserrat', sans-serif;
+    --font-subheading: 'Bebas Neue', sans-serif;
+    --padding-inline-section: 20px;
+}
+
+body {
+    font-family: var(--font-paragraph);
+    color: var(--text-color);
+}
+
+h1 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    letter-spacing: 7px;
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-family: var(--font-subheading);
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+p {
+    font-family: var(--font-paragraph);
+    font-size: 1.25rem;
+    color: var(--text-color);
+    line-height: 1.8rem;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    font-family: var(--font-subheading);
+}
+
+ul {
+    list-style: none;
+}
+
+/* utility classes */
+
+.container {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+/* header section */
+
+.header-section {
+    background-color: var(--background-color);
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    padding: 20px 0;
+    height: 100vh;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header-logo img {
+    width: 150px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-links li a {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.4s ease-in-out;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.header-section-detail {
+    display: flex;
+}
+
+.header-section-text {
+    width: 50%;
+    display: flex;
+    padding: 80px var(--padding-inline-section) 0 0;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.header-line {
+    font-size: .87rem;
+    padding-inline: 8px;
+    border: 1px dashed var(--text-color);
+}
+
+.header-heading h1 {
+    text-shadow: 3px 3px .5px rgb(239, 231, 177);
+    font-size: 6rem;
+}
+
+.header-heading h2 {
+    text-shadow: 3px 3px .5px rgb(239, 231, 177);
+    font-size: 4rem;
+}
+
+.header-section-img {
+    margin-top: 50px;
+    width: 50%;
+    
+}
+
+.header-section-img img {
+    width: 100%;
+}
+
+.header-section-img-text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-image: url(../img/circle.png);
+    width: 100px;
+    height: 100px;
+    bottom: 110px;
+    right: 490px;
+    background-size: cover;
+    z-index: 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-section-img-text h4 {
+    font-size: 1.9rem;
+    color: white;
+}
+
+.header-section-img-text h4 span {
+    font-size: small;
+}
+
+.header-section-img-text h5 {
+    font-size: 1rem;
+    color: white;
+    letter-spacing: 4px;
+}
+
