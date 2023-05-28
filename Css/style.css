@@ -41,9 +41,9 @@ h3 {
 
 p {
     font-family: var(--font-paragraph);
-    font-size: 1.25rem;
+    font-size: 0.875rem;
     color: var(--text-color);
-    line-height: 1.8rem;
+    line-height: 1.2rem;
     letter-spacing: 1px;
 }
 
@@ -65,7 +65,40 @@ ul {
     padding-inline: var(--padding-inline-section);
 }
 
+.primary-btn {
+    background-color: var(--accent-color);
+    font-family: var(--font-heading);
+    color: white;
+    padding: 10px 20px;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.4s ease-in-out;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
 /* header section */
+
+.delivery {
+    
+    color: var(--text-color);
+    text-align: right;
+    overflow: hidden;
+}
+
+.delivery p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.delivery p img {
+    width: 30px;
+    height: auto;
+    margin-inline: 5px;
+}
 
 .header-section {
     background-color: var(--background-color);
@@ -84,6 +117,7 @@ ul {
 
 .header-logo img {
     width: 150px;
+    height: auto;
 }
 
 .nav-links {
@@ -96,7 +130,7 @@ ul {
     font-size: 1.25rem;
     font-weight: 500;
     letter-spacing: 1px;
-    transition: 0.4s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .nav-links li a:hover {
@@ -140,6 +174,7 @@ ul {
 
 .header-section-img img {
     width: 100%;
+    height: auto;
 }
 
 .header-section-img-text {
@@ -173,3 +208,362 @@ ul {
     letter-spacing: 4px;
 }
 
+
+/* dispaly section */
+
+.display-section-container {
+    margin-block: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.display-section-big-img {
+    width: 50%;
+    background-image: url(../img/BurgerImage1.png);
+    height: 410px;
+    background-size: cover;
+    background-position: center;
+    background-color: #bf2222;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+}
+
+.display-section-two-img {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.display-section-two-img-one,
+.display-section-two-img-two {
+    background-image: url(../img/BurgerImage2.png);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-color: #bf2222;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+}
+
+.display-section-two-img-two {
+    background-image: url(../img/BurgerImage3.png);
+}
+
+.display-section-big-img h6,
+.display-section-two-img-one h6, 
+.display-section-two-img-two h6 {
+    font-size: 1.5rem;
+    font-family: var(--font-subheading);
+    color: #ffffff;
+    padding: 20px var(--padding-inline-section) 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.display-section-big-img h5,
+.display-section-two-img-one h5,
+.display-section-two-img-two h5 {
+    font-size: 2.5rem;
+    font-family: var(--font-subheading);
+    color: white;
+    padding: 0 var(--padding-inline-section) 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* CHOOSE section */
+
+.choose-section-container {
+    margin-block: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.choose-section-container h5 {
+    background-color: var(--background-color);
+    padding: 10px;
+    font-family: var(--font-subheading);
+}
+
+.choose-section-container h2 {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+}
+
+/* menu section */
+
+.menu-section-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-section-card {
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu-section-card-img {
+    display: flex;
+    align-items: flex-start;
+}
+
+.menu-section-card-img img{
+    align-self: flex-start;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    height: auto;
+}
+
+.menu-section-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+/* upcoming section */
+
+.upcoming-section-container {
+    padding: 10px;
+    margin-block: 50px;
+    display: flex;
+    gap: 50px;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.upcoming-section-text {
+    padding-top: 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.upcoming-section-text h5 {
+    font-size: 1.5rem;
+    font-family: var(--font-subheading);
+    color: var(--text-color);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.upcoming-section-text p {
+    margin-top: 20px;
+}
+
+.upcoming-section-img {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upcoming-section-img img {
+    width: 100%;
+    height: auto;
+}
+
+/* reservation section */
+
+.reservation-section {
+    position: relative;
+}
+
+.left-side-img {
+    position: absolute;
+    background-image: url(../img/Burgerside1.png);
+    height: 200px;
+    width: 200px;
+    top: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.left-side-img2 {
+    position: absolute;
+    background-image: url(../img/Bottle.png);
+    height: 200px;
+    width: 150px;
+    top: 200px;
+    left: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.reservation-section-container {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.reservation-section-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.reservation-section-heading h5 {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-family: var(--font-subheading);
+    color: var(--text-color);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.reservation-section-heading h2 {
+    display: inline-block;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+}
+
+.reservation-section-form {
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    align-content: center;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form-left,
+.form-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.form-right p a {
+    width: 100%;
+    border-radius: 4px;
+    letter-spacing: 2px;
+}
+
+.right-side-img {
+    position: absolute;
+    background-image: url(../img/Burgerside2.png);
+    height: 300px;
+    width: 200px;
+    bottom: -30px;
+    right: 0px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* footer section */
+
+.footer-section {
+    background-image: url(../img/footerbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-section-container {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    gap: 20px;
+}
+
+.footer-section-logo img {
+    width: 300px;
+}
+
+.footer-section-body {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-section-text {
+    color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 10px;
+}
+
+.footer-section-connect {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 10px;
+}
+
+.footer-section-connect i {
+    margin-right: 15px;
+}
+
+
+.footer-section-foot {
+    padding-top: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 300px;
+    width: 100%;
+}
+
+.footer-section-social-link {
+    color: white;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-section-social-link i {
+    color: white;
+    font-size: 1rem;
+}
