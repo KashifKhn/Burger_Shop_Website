@@ -1,5 +1,8 @@
 # Burger Website
 
+## Live View
+https://kashifkhn.github.io/Burger_Shop_Website/
+
 This is a simple landing page for a Burger Website. It showcases various sections such as the header, display section, choose section, menu section, upcoming events section, reservation section, and footer. The landing page is designed using HTML and CSS.
 
 ## Table of Contents
